@@ -151,7 +151,7 @@ const Auth = () => {
             <TabsContent value="signup" data-testid="signup-form">
               <form onSubmit={handleSignUp} className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="full-name">Full Name</Label>
+                  <Label htmlFor="full-name" className="text-gray-200">Full Name</Label>
                   <Input
                     id="full-name"
                     data-testid="signup-fullname-input"
@@ -163,7 +163,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email" className="text-gray-200">Email</Label>
                   <Input
                     id="email"
                     data-testid="signup-email-input"
@@ -175,7 +175,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone</Label>
+                  <Label htmlFor="phone" className="text-gray-200">Phone</Label>
                   <Input
                     id="phone"
                     data-testid="signup-phone-input"
@@ -187,7 +187,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="college">College Name</Label>
+                  <Label htmlFor="college" className="text-gray-200">College Name</Label>
                   <Input
                     id="college"
                     data-testid="signup-college-input"
@@ -199,7 +199,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="course">Course/Branch</Label>
+                  <Label htmlFor="course" className="text-gray-200">Course/Branch</Label>
                   <Input
                     id="course"
                     data-testid="signup-course-input"
@@ -211,7 +211,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
+                  <Label htmlFor="password" className="text-gray-200">Password</Label>
                   <Input
                     id="password"
                     data-testid="signup-password-input"
