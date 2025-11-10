@@ -63,22 +63,6 @@ const Hero = () => {
             View Events
           </Button>
         </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 mt-16 max-w-3xl mx-auto">
-          <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
-            <div className="text-3xl sm:text-4xl font-bold text-gradient mb-2">3</div>
-            <div className="text-sm text-gray-400">Days of Fun</div>
-          </div>
-          <div className="animate-scale-in" style={{ animationDelay: '0.4s' }}>
-            <div className="text-3xl sm:text-4xl font-bold text-gradient mb-2">50+</div>
-            <div className="text-sm text-gray-400">Events</div>
-          </div>
-          <div className="animate-scale-in" style={{ animationDelay: '0.6s' }}>
-            <div className="text-3xl sm:text-4xl font-bold text-gradient mb-2">5000+</div>
-            <div className="text-sm text-gray-400">Participants</div>
-          </div>
-        </div>
       </div>
     </section>
   );
