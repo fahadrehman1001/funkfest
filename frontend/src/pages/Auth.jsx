@@ -85,10 +85,24 @@ const Auth = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
       </div>
 
-      <Card className="w-full max-w-md glass-card animate-scale-in relative z-10">
+      {/* Back to Home Button */}
+      <Button
+        variant="ghost"
+        className="absolute top-8 left-8 z-20 text-white hover:text-purple-400"
+        onClick={() => navigate('/')}
+        data-testid="back-to-home-auth"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+          <path d="m12 19-7-7 7-7"/>
+          <path d="M19 12H5"/>
+        </svg>
+        Back to Home
+      </Button>
+
+      <Card className="w-full max-w-md relative z-10" style={{ background: 'rgba(15, 10, 30, 0.95)', backdropFilter: 'blur(16px)', border: '1px solid rgba(139, 92, 246, 0.3)' }}>
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold text-gradient" style={{ fontFamily: 'Exo 2, sans-serif' }}>FunkFest Frenzy</CardTitle>
-          <CardDescription className="text-gray-400">Join the ultimate college fest experience</CardDescription>
+          <CardDescription className="text-gray-300">Join the ultimate college fest experience</CardDescription>
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="signin" className="w-full">
