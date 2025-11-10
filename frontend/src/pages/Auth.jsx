@@ -106,15 +106,15 @@ const Auth = () => {
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="signin" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-6">
-              <TabsTrigger value="signin" data-testid="signin-tab">Sign In</TabsTrigger>
-              <TabsTrigger value="signup" data-testid="signup-tab">Sign Up</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-2 mb-6" style={{ background: 'rgba(139, 92, 246, 0.1)' }}>
+              <TabsTrigger value="signin" data-testid="signin-tab" className="text-gray-200 data-[state=active]:text-white">Sign In</TabsTrigger>
+              <TabsTrigger value="signup" data-testid="signup-tab" className="text-gray-200 data-[state=active]:text-white">Sign Up</TabsTrigger>
             </TabsList>
 
             <TabsContent value="signin" data-testid="signin-form">
               <form onSubmit={handleSignIn} className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="signin-email">Email</Label>
+                  <Label htmlFor="signin-email" className="text-gray-200">Email</Label>
                   <Input
                     id="signin-email"
                     data-testid="signin-email-input"
