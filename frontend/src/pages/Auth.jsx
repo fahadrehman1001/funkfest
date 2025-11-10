@@ -126,7 +126,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="signin-password">Password</Label>
+                  <Label htmlFor="signin-password" className="text-gray-200">Password</Label>
                   <Input
                     id="signin-password"
                     data-testid="signin-password-input"
